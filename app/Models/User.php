@@ -47,4 +47,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function kader(){
+        return $this->hasOne(DataKader::class);
+    }
 }

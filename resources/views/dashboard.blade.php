@@ -12,7 +12,7 @@
     <div class="grid grid-cols-1 lg:md:grid-cols-3 mb-4 text-gray-900 dark:text-gray-100 ">
         <div class="p-6 col-span-1 lg:col-span-2 bg-white dark:bg-gray-800 rounded-lg">
             <p class="uppercase font-bold mb-2">jumlah kader posyandu</p>
-            <p class="text-3xl font-bold">12</p>
+            <p class="text-3xl font-bold">{{ App\Models\User::role('kader')->count() }}</p>
         </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4 text-gray-900 dark:text-gray-100 ">
